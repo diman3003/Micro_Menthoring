@@ -1,0 +1,35 @@
+[bB]in/
+[oO]bj/
+*.suo
+[dD]atabase*.sql
+prepDB.sql
+*.user
+*.dbmdl
+*.jfm
+FisBuild/
+[Pp]ackages/
+*.vspscc
+*.licx
+/.axoCover
+
+# SonarQube
+.sonarqube/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# Visual Studio Code directory
+.vscode/
+
+# Cake tools
+tools/*
+.ci/
+
+/build.json
+/build.cmd
+
+#Development configs
+**/appsettings.Development.json
+
+# Omnisharp
+omnisharp.json
