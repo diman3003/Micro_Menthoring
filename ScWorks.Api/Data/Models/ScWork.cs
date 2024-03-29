@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace ScWorks.Api.Data.Models
 {
@@ -17,5 +19,8 @@ namespace ScWorks.Api.Data.Models
         public DateOnly? Published { get; set; }
         [Column("edited")]
         public DateOnly? Edited { get; set; }
+
+        [NotMapped]
+        public string FilePath { get; set; }
     }
 }

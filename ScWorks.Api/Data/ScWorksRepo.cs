@@ -28,6 +28,11 @@ public class ScWorksRepo(ScWorksDbContext context) : IScWorksRepo
         return context.ScWorks.FirstOrDefault(x => x.Id == id);
     }
 
+    public ScWork GetWorkByObjId(string id)
+    {
+        return context.ScWorks.FirstOrDefault(x => x.Annotation == id);
+    }
+
     public bool UpdateWork(ScWork work)
     {
         context.Update(work);
